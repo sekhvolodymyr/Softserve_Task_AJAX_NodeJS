@@ -4,7 +4,7 @@ const btn = document.getElementById('btn');
 
 btn.addEventListener('click', () => {
     async function getResponse() {
-        let response = await fetch('js/users.json')
+        let response = await fetch('http://localhost:8080/')
         let content = await response.json();
         let list = document.querySelector('.wrapper');
         let key;
