@@ -4,7 +4,7 @@ const btn = document.getElementById('btn');
 
 btn.addEventListener('click', () => {
     async function getResponse() {
-        let response = await fetch('http://localhost:8080/',{mode:'no-cors'})
+        let response = await fetch('http://127.0.0.1:3000/')
         let content = await response.json();
         let list = document.querySelector('.wrapper');
         let key;
